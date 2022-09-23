@@ -1,0 +1,19 @@
+import random
+
+test_seed = int(input("Create a seed number: "))
+random.seed(test_seed)
+
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+# tim, ted, tod, han, dan, ed, jon, ben, rok, mo, ray, mel
+# print(names)
+l= len(names)-1
+
+random_index = random.randint(0,l)
+random_name = names[random_index]
+# print(random_index)
+# print(names[random_index])
+# print(random_name)
+print(f"{random_name} is going to buy the meal today!")
